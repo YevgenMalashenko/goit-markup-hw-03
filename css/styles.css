@@ -436,7 +436,7 @@ footer>.container {
 /* при таком расчете нужно считать width: calc((100% - 90px) / 3), 90, так как у нас теперь уже не два марджина, а 3 по 30px или 6 по 15px */
 
 .project-list-item {
-  width: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 90px) / 3);
   /* outline: 2px solid violet; */
   /* margin: 15px; */
   margin-top: 30px;
