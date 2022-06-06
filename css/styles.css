@@ -42,6 +42,10 @@ header {
   padding-right: 15px;
 }
 
+.section {
+  padding: 94px 0;
+}
+
 header > .container {
   display: flex;
   justify-content: space-between;
@@ -95,7 +99,6 @@ header .contacts-header {
 }
 
 .link {
-  /* margin-right: 50px; */
   color: var(--site-nav-links-color);
   font-weight: 500;
   font-size: 14px;
@@ -135,17 +138,11 @@ header .contacts-header {
 /* Герой */
 
 .hero {
+  padding: 200px 0;
   background-color: var(--add-background-color);
 
   text-align: center;
 }
-
-/* Согласно критериям, «B15» Для всех секций используется один класс .section,
-заданы верхние и нижние падинги по 94px,
-отодвигающие контент внутрь секции. Ниже Используется контейнер потому что там падинги больше - уточнить у ментора */
-
-/* так как на фоне будет картинка background-image, которую будем учить позже, пока будет сделано согласно критериям дз */
-
 
 
 button {
@@ -165,8 +162,8 @@ button:focus {
 .main-button {
   margin-left: auto;
   margin-right: auto;
-  background: #F5F4FA;
-  color: var(--site-nav-links-color);
+  background: var(--accent);
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -189,9 +186,7 @@ button:focus {
 
 /* Про компанию */
 
-.section {
-  padding: 94px 0;
-}
+
 
 /* заголовки скрыты полностью. Неправильно, как правильно, расскажут позже, сделано для стиллизации */
 .about-company-title,
@@ -217,7 +212,8 @@ button:focus {
 }
 
 
-/* задает отступ справа всем элементам списка, кроме каждого 4го */
+/* задает отступ справа всем элементам списка, кроме каждого 4го,
+ начиная с 4го */
 .features-list .item:not(.features-list .item:nth-child(4n + 4)) {
   margin-right: 30px;
 }
@@ -230,6 +226,10 @@ button:focus {
 
 /* Чем занимается команда */
 
+.activity {
+  padding-top: 0;
+}
+
 .activity-title,
 .team-title {
   color: var(--title-text-color);
@@ -241,7 +241,6 @@ button:focus {
 }
 
 .activity-title {
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -284,7 +283,6 @@ button:focus {
 /* задает display:block картинке чтобы убрать нижний "отступ" */
 .team-list img {
   display: block;
-  margin-bottom: 30px;
 }
 
 .team-list .item {
@@ -300,6 +298,10 @@ button:focus {
   margin-right: 30px;
 }
 
+.team-descr {
+  padding: 30px 0;
+
+}
 
 .team-member {
   margin-bottom: 10px;
@@ -314,7 +316,6 @@ button:focus {
 
 .position {
   text-align: center;
-  margin-bottom: 30px;
 
   color: var(--primary-text-color);
   font-size: 16px;
@@ -331,9 +332,13 @@ button:focus {
 footer {
   background-color: var(--add-background-color);
 }
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 footer>.container {
-  padding: 60px 15px;
+  padding: 0 15px;
 }
 
 .footer-logo {
@@ -397,7 +402,7 @@ footer>.container {
 }
 
 
-/* задает отступы справа всем єлементам кроме последнего */
+/* задает отступы справа всем элементам кроме последнего */
 .filter-list > li:not(:last-child) {
   margin-right: 8px;
 }
@@ -471,13 +476,11 @@ footer>.container {
 
 .project-link {
   text-decoration: none;
-  /* display: inline-block; */
 }
 
 .project-link img {
   display: block;
 }
-
 
 .project-link:hover,
 .project-link:focus {
@@ -502,7 +505,6 @@ footer>.container {
 }
 
 .project-type {
-  margin-bottom: 20px;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -511,8 +513,7 @@ footer>.container {
 }
 
 .project-descr {
-  padding-top: 20px;
-  padding-left: 24px;
+  padding: 20px 24px;
   border-left: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
